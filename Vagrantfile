@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     x86.vm.box = "timschumi/debian8-x32"
   end
 
-  config.vm.hostname = "curl-build"
+  config.vm.hostname = "cmake-build"
   config.vm.synced_folder ".", "/vagrant", nfs_version: 4
 
   config.vm.provision "shell", inline: <<-SHELL
