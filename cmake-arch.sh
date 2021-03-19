@@ -26,6 +26,6 @@ rm -rf "$OUT_DIR"
 mkdir -p $BUILD_DIR
 cd "$BUILD_DIR"
 
-"$CMAKE_SOURCE/bootstrap" --prefix="/usr/local"
+"$CMAKE_SOURCE/bootstrap" --prefix="/usr/local" --parallel=2
 make -j2
 make DESTDIR="$OUT_DIR" install
