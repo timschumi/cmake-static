@@ -29,5 +29,5 @@ export CMAKE_BUILD="$WORKING_DIR/cmake-build"
 export CMAKE_OUT="$SCRIPTS_DIR/out/cmake"
 
 # Build cmake
-$SCRIPTS_DIR/cmake-sources.sh 3.17.3
+$SCRIPTS_DIR/cmake-sources.sh 3.19.7
 $SCRIPTS_DIR/cmake-arch.sh "$1"
